@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Print in JavaScript</title>
+  </head>
+  <body>
+    <div id="output"></div>
+
+    <script>
+      // Using console.log
+      console.log("Logging to the console.");
+
+      // Using alert
+      alert("This is an alert!");
+
+      // Using document.write
+      document.write("This is written using document.write.<br>");
+
+      // Modifying HTML element content
+      document.getElementById("output").textContent =
+        "This is written using innerHTML.";
+
+      // Using template literals
+      let name = "Alice";
+      console.log(`Hello, ${name}!`); // Output: Hello, Alice!
+
+      // Using window.print
+      function printPage() {
+        window.print();
+      }
+    </script>
+
+    <button onclick="printPage()">Print this page</button>
+  </body>
+</html>

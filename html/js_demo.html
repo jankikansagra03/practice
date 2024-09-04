@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var x = 100;
+      //   function test() {
+      const car = {
+        name: "grandi-10",
+        company: "tata",
+        color: "white",
+        petrol: "petrol",
+      };
+      car.love = "I love my car";
+      delete car.love;
+      for (let key in car) {
+        console.log(key + ": " + car[key]);
+      }
+
+      const student = {
+        name: "JAnki",
+        lastname: "KAnsagra",
+        fullname: function () {
+          return this.name + " " + this.lastname;
+        },
+        age: 25,
+        subjects: ["Math", "Science", "English"],
+        maths_grade: 75,
+        science_grade: 80,
+        english_grade: 85,
+        total: function () {
+          return (total =
+            student.maths_grade +
+            student.science_grade +
+            student.english_grade);
+        },
+        getAverage: function () {
+          percentage = student.total() / 3;
+          return percentage;
+        },
+        getGrade: function () {
+          if (this.getAverage > 90) {
+            return "A+";
+          } else {
+            return "B+";
+          }
+        },
+      };
+      console.log(student.fullname());
+      console.log(student.age);
+      console.log(student.subjects);
+      console.log(student.total());
+      console.log(student.getAverage());
+      console.log(student.getGrade());
+      for (let key in student) {
+        console.log(key + ": " + student[key]);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <input type="button" value="random" onclick="test()" /> -->
+  </body>
+</html>

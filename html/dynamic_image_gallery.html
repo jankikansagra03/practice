@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Flex Layout</title>
+    <style>
+      .flex-container {
+        background-color: cadetblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Space between items */
+        padding: 50px;
+        box-sizing: border-box;
+      }
+
+      .flex-item {
+        background-color: bisque;
+        height: 200px;
+        flex: 1 1 calc(25% - 30px); /* 4 columns on larger screens */
+        margin: 5px; 
+      }
+
+      .flex-item img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Ensures the image covers the flex item without distortion */
+      }
+
+      /* Media queries for responsiveness */
+      @media (max-width: 1200px) {
+        .flex-item {
+          flex: 1 1 calc(33.33% - 30px); /* 3 columns for medium screens */
+        }
+      }
+
+      @media (max-width: 768px) {
+        .flex-item {
+          flex: 1 1 calc(50% - 30px); /* 2 columns for small screens */
+        }
+      }
+
+      @media (max-width: 576px) {
+        .flex-item {
+          flex: 1 1 calc(100% - 30px); /* 1 column for extra small screens */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="flex-item" id="flex-1">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-2">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-3">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-4">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-5">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-6">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-7">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-8">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-9">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-10">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-11">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-12">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-13">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-14">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-15">
+        <img src="images/1.png" alt="test" />
+      </div>
+      <div class="flex-item" id="flex-16">
+        <img src="images/1.png" alt="test" />
+      </div>
+    </div>
+  </body>
+</html>

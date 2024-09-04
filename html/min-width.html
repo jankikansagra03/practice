@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: cadetblue;
+        padding: 20px;
+        gap: 10px;
+      }
+      .item {
+        flex: 1 1 calc(100% - 20px);
+        margin: 5px;
+        height: 200px;
+      }
+      .item img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      @media (min-width: 500px) {
+        .item {
+          flex: 1 1 calc(50% - 20px);
+        }
+      }
+      @media (min-width: 800px) {
+        .item {
+          flex: 1 1 calc(33% - 20px);
+        }
+      }
+      @media (min-width: 1200px) {
+        .item {
+          flex: 1 1 calc(25% - 20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="item1"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item2"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item3"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item4"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item5"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item6"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item7"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item8"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item9"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item10"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item11"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item12"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item13"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item14"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item15"><img src="images/2.jpg" alt="" /></div>
+      <div class="item" id="item16"><img src="images/2.jpg" alt="" /></div>
+    </div>
+  </body>
+</html>
