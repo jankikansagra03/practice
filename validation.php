@@ -22,7 +22,7 @@
                     maxlength: 20,
                     // lettersonly: true,
                     email: true,
-                    pattern:/^[0-9]{10} $/
+                    pattern: /^[0-9]{10} $/
                 }
             },
             messages: {
@@ -32,7 +32,7 @@
                     maxlength: "Name cannot contain more than 20 characters",
                     // lettersonly: "Only Letters are allowed for name",
                     email: "invalid email address"
-                   
+
                 }
             },
             errorElement: "div",
